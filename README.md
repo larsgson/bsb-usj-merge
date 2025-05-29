@@ -1,10 +1,10 @@
-# CSV to USFM Converter
+# BSB to USJ Merge
 
 - Bible resources format converter
 
 - based on the .xslx format from the BibleHub
 
-The app is available [here](https://csv2usfm.netlify.app/)
+The app is available [here](https://bsb-usj-merge.netlify.app/)
 
 ---
 
