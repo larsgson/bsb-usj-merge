@@ -22,7 +22,6 @@ export default function AppLayout() {
   const strip = (str) => str.trim()
   
   const cleanupString = (str) => {
-    console.log("'"+str+"'")
     // const tempStr = str.replace(/ʼ/g, "’") // replace "ʼ" with "’"
     // The above should hopefully be possible to handle - in reverse - from the generated usj from Martin Hosken
     const tempStr = str.replace(/(\S+ )\s+/g, "$1") // remove multiple " "
@@ -34,20 +33,19 @@ export default function AppLayout() {
     const tempStr7 = tempStr6.replace(/”(\S+)/g, "” $1") // replace "”" with "” "
     // remove " " at the beginning (trim)
     const tempStr8 = strip(tempStr7)
-    console.log("'"+tempStr8+"'")
+    if (str!==tempStr8) {
+      console.log("'"+str+"' -> '"+tempStr8+"'")
+    }
     return tempStr8
   }
 
   const cleanupItem = (item) => {
     let resItem = item
-    console.log(item.constructor)
     if (typeof item === 'string') {
       resItem = cleanupString(item)
     } else if (item.constructor === Array) {
-      console.log("arr")
       resItem = cleanupArr(item)
     } else if (item.constructor === Object) {
-      console.log("obj")
       resItem = cleanupObj(item)
     }
     return resItem

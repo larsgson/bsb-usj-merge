@@ -72,7 +72,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["1:8 "] },
+            { type: "char", marker: "fr", content: ["1:8"] },
             {
               type: "char",
               marker: "ft",
@@ -127,39 +127,39 @@ export const before = {
     },
     {
       type: "para",
-      marker: "q1",
+      marker: "p",
       content: [
         { type: "verse", marker: "v", number: "16" },
         "But Ruth replied:",
       ],
     },
-    { type: "para", marker: "q2", content: ["“Do not urge me to leave you"] },
-    { type: "para", marker: "q1", content: ["or to turn from following you."] },
+    { type: "para", marker: "q1", content: ["“Do not urge me to leave you"] },
+    { type: "para", marker: "q2", content: ["or to turn from following you."] },
     {
       type: "para",
-      marker: "q2",
+      marker: "q1",
       content: ["For wherever you go, I will go,"],
     },
     {
       type: "para",
-      marker: "q1",
+      marker: "q2",
       content: ["and wherever you live, I will live;"],
     },
-    { type: "para", marker: "q2", content: ["your people will be my people,"] },
-    { type: "para", marker: "q1", content: ["and your God will be my God."] },
+    { type: "para", marker: "q1", content: ["your people will be my people,"] },
+    { type: "para", marker: "q2", content: ["and your God will be my God."] },
     {
       type: "para",
-      marker: "q2",
+      marker: "q1",
       content: [
         { type: "verse", marker: "v", number: "17" },
         "Where you die, I will die,",
       ],
     },
-    { type: "para", marker: "q1", content: ["and there I will be buried."] },
-    { type: "para", marker: "q2", content: ["May the LORD punish me,"] },
-    { type: "para", marker: "q1", content: ["and ever so severely,"] },
-    { type: "para", marker: "q2", content: ["if anything but death"] },
-    { type: "para", marker: "p", content: ["separates you and me.”"] },
+    { type: "para", marker: "q2", content: ["and there I will be buried."] },
+    { type: "para", marker: "q1", content: ["May the LORD punish me,"] },
+    { type: "para", marker: "q2", content: ["and ever so severely,"] },
+    { type: "para", marker: "q1", content: ["if anything but death"] },
+    { type: "para", marker: "q2", content: ["separates you and me.”"] },
     {
       type: "para",
       marker: "p",
@@ -187,7 +187,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["1:20 "] },
+            { type: "char", marker: "fr", content: ["1:20"] },
             {
               type: "char",
               marker: "ft",
@@ -201,7 +201,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["1:20 "] },
+            { type: "char", marker: "fr", content: ["1:20"] },
             {
               type: "char",
               marker: "ft",
@@ -215,7 +215,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["1:20 "] },
+            { type: "char", marker: "fr", content: ["1:20"] },
             {
               type: "char",
               marker: "ft",
@@ -363,7 +363,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["2:17 "] },
+            { type: "char", marker: "fr", content: ["2:17"] },
             {
               type: "char",
               marker: "ft",
@@ -403,7 +403,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["2:20 "] },
+            { type: "char", marker: "fr", content: ["2:20"] },
             {
               type: "char",
               marker: "ft",
@@ -499,7 +499,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["3:9 "] },
+            { type: "char", marker: "fr", content: ["3:9"] },
             {
               type: "char",
               marker: "ft",
@@ -515,7 +515,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["3:9 "] },
+            { type: "char", marker: "fr", content: ["3:9"] },
             {
               type: "char",
               marker: "ft",
@@ -542,7 +542,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["3:12 "] },
+            { type: "char", marker: "fr", content: ["3:12"] },
             {
               type: "char",
               marker: "ft",
@@ -574,7 +574,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["3:15 "] },
+            { type: "char", marker: "fr", content: ["3:15"] },
             {
               type: "char",
               marker: "ft",
@@ -590,7 +590,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["3:15 "] },
+            { type: "char", marker: "fr", content: ["3:15"] },
             {
               type: "char",
               marker: "ft",
@@ -641,7 +641,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["4:1 "] },
+            { type: "char", marker: "fr", content: ["4:1"] },
             {
               type: "char",
               marker: "ft",
@@ -675,7 +675,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["4:4 "] },
+            { type: "char", marker: "fr", content: ["4:4"] },
             {
               type: "char",
               marker: "ft",
@@ -775,7 +775,7 @@ export const before = {
     },
     {
       type: "para",
-      marker: "li1",
+      marker: "p",
       content: [
         { type: "verse", marker: "v", number: "18" },
         "Now these are the generations of Perez:",
@@ -816,7 +816,7 @@ export const before = {
           type: "note",
           marker: "f",
           content: [
-            { type: "char", marker: "fr", content: ["4:20 "] },
+            { type: "char", marker: "fr", content: ["4:20"] },
             {
               type: "char",
               marker: "ft",
@@ -848,7 +848,7 @@ export const before = {
     },
     {
       type: "para",
-      marker: "p",
+      marker: "li1",
       content: ["and Jesse was the father of David."],
     },
   ],
