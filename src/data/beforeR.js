@@ -15,13 +15,7 @@ export const before = {
     { type: "para", marker: "mt1", content: ["Ruth"] },
     { type: "chapter", marker: "c", number: "1" },
     { type: "para", marker: "s1", content: ["Naomi Becomes a Widow"] },
-    {
-      type: "para",
-      marker: "r",
-      content: [
-        "<br /><span class=|cross|>(<a href =|../1_timothy/5.htm#3|>1 Timothy 5:3–16</a>)</span>",
-      ],
-    },
+    { type: "para", marker: "r", content: ["(1 Timothy 5:3–16)"] },
     {
       type: "para",
       marker: "p",
@@ -77,7 +71,7 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Forms of the Hebrew <i>chesed</i> are translated here and in most cases throughout the Scriptures as <i>loving devotion</i>; the range of meaning includes <i>love</i>, <i>goodness</i>, <i>kindness</i>, <i>faithfulness</i>, and <i>mercy</i>, as well as <i>loyalty to a covenant</i>.",
+                "Forms of the Hebrew chesed are translated here and in most cases throughout the Scriptures as loving devotion; the range of meaning includes love, goodness, kindness, faithfulness, and mercy, as well as loyalty to a covenant.",
               ],
             },
           ],
@@ -94,7 +88,7 @@ export const before = {
       content: [
         "And she kissed them as they wept aloud",
         { type: "verse", marker: "v", number: "10" },
-        "and said “Surely we will return with you to your people.”",
+        "and said, “Surely we will return with you to your people.”",
       ],
     },
     {
@@ -188,25 +182,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["1:20"] },
-            {
-              type: "char",
-              marker: "ft",
-              content: ["<i>Naomi</i> means <i>pleasant</i>."],
-            },
+            { type: "char", marker: "ft", content: ["Naomi means pleasant."] },
           ],
           caller: "+",
         },
-        "she replied. “Call me Mara,",
+        "” she replied. “Call me Mara,",
         {
           type: "note",
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["1:20"] },
-            {
-              type: "char",
-              marker: "ft",
-              content: ["<i>Mara</i> means <i>bitter</i>."],
-            },
+            { type: "char", marker: "ft", content: ["Mara means bitter."] },
           ],
           caller: "+",
         },
@@ -219,7 +205,7 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Hebrew <i>Shaddai</i>; also in verse 21"],
+              content: ["Hebrew Shaddai; also in verse 21"],
             },
           ],
           caller: "+",
@@ -258,7 +244,7 @@ export const before = {
     {
       type: "para",
       marker: "p",
-      content: ["“Go ahead, my daughter,” Naomi replied"],
+      content: ["“Go ahead, my daughter,” Naomi replied."],
     },
     {
       type: "para",
@@ -279,7 +265,7 @@ export const before = {
     {
       type: "para",
       marker: "p",
-      content: ["“The LORD bless you,” they replied"],
+      content: ["“The LORD bless you,” they replied."],
     },
     {
       type: "para",
@@ -296,7 +282,7 @@ export const before = {
         { type: "verse", marker: "v", number: "6" },
         "The foreman answered, “She is the Moabitess who returned with Naomi from the land of Moab.",
         { type: "verse", marker: "v", number: "7" },
-        "She has said, ‘Please let me glean and gather among the sheaves after the harvesters. ’So she came out and has continued from morning until now, except that she rested a short time in the shelter.”",
+        "She has said, ‘Please let me glean and gather among the sheaves after the harvesters.’ So she came out and has continued from morning until now, except that she rested a short time in the shelter.”",
       ],
     },
     {
@@ -368,12 +354,13 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "<i>An ephah</i> is approximately 20 dry quarts or 22 liters (probably about 29 pounds or 13.2 kilograms of barley).",
+                "An ephah is approximately 20 dry quarts or 22 liters (probably about 29 pounds or 13.2 kilograms of barley).",
               ],
             },
           ],
           caller: "+",
         },
+        "",
         { type: "verse", marker: "v", number: "18" },
         "She picked up the grain and went into the town, where her mother-in-law saw what she had gleaned. And she brought out what she had saved from her meal and gave it to Naomi.",
       ],
@@ -398,7 +385,7 @@ export const before = {
       marker: "p",
       content: [
         { type: "verse", marker: "v", number: "20" },
-        "Then Naomi said to her daughter-in-law, “May he be blessed by the LORD, who has not withdrawn His kindness from the living or the dead.” Naomi continued “The man is a close relative. He is one of our kinsman-redeemers.",
+        "Then Naomi said to her daughter-in-law, “May he be blessed by the LORD, who has not withdrawn His kindness from the living or the dead.” Naomi continued, “The man is a close relative. He is one of our kinsman-redeemers.",
         {
           type: "note",
           marker: "f",
@@ -408,12 +395,15 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "The Hebrew word for <i>kinsman-redeemer</i> or <i>guardian-redeemer</i> is a legal term for the kinsman who redeems or vindicates a relative; see Leviticus 25:25–55.",
+                "The Hebrew word for kinsman-redeemer or guardian-redeemer is a legal term for the kinsman who redeems or vindicates a relative; see",
+                { type: "char", marker: "xt", content: ["Leviticus 25:25–55"] },
+                ".",
               ],
             },
           ],
           caller: "+",
         },
+        "”",
       ],
     },
     {
@@ -421,7 +411,7 @@ export const before = {
       marker: "p",
       content: [
         { type: "verse", marker: "v", number: "21" },
-        "Then Ruth the Moabitess said, “He also told me, ‘Stay with my young men until they have finished gathering all my harvest. ’”",
+        "Then Ruth the Moabitess said, “He also told me, ‘Stay with my young men until they have finished gathering all my harvest.’”",
       ],
     },
     {
@@ -504,7 +494,9 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Or <i>Spread your wing</i>; the word for <i>wing</i> can also mean <i>corner of a garment</i>; see Ruth 2:12.",
+                "Or Spread your wing; the word for wing can also mean corner of a garment; see",
+                { type: "char", marker: "xt", content: ["Ruth 2:12"] },
+                ".",
               ],
             },
           ],
@@ -520,12 +512,15 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "The Hebrew word for <i>kinsman-redeemer</i> or <i>guardian-redeemer</i> is a legal term for the kinsman who redeems or vindicates a relative; similarly in verses 12 and 13; see Leviticus 25:25–55.",
+                "The Hebrew word for kinsman-redeemer or guardian-redeemer is a legal term for the kinsman who redeems or vindicates a relative; similarly in verses 12 and 13; see",
+                { type: "char", marker: "xt", content: ["Leviticus 25:25–55"] },
+                ".",
               ],
             },
           ],
           caller: "+",
         },
+        "”",
       ],
     },
     {
@@ -551,6 +546,7 @@ export const before = {
           ],
           caller: "+",
         },
+        "",
         { type: "verse", marker: "v", number: "13" },
         "Stay here tonight, and in the morning, if he wants to redeem you, good. Let him redeem you. But if he does not want to redeem you, as surely as the LORD lives, I will. Now lie here until morning.”",
       ],
@@ -579,7 +575,7 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Possibly six seahs (two ephahs), or approximately 39.6 dry quarts or 43.8 liters (about 58 pounds or 26.3 kilograms of barley) ",
+                "Possibly six seahs (two ephahs), or approximately 39.6 dry quarts or 43.8 liters (about 58 pounds or 26.3 kilograms of barley)",
               ],
             },
           ],
@@ -595,7 +591,7 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Most Hebrew manuscripts; many Hebrew manuscripts, Vulgate, and Syriac <i>she went</i>",
+                "Most Hebrew manuscripts; many Hebrew manuscripts, Vulgate, and Syriac she went",
               ],
             },
           ],
@@ -618,7 +614,7 @@ export const before = {
       content: [
         "Then Ruth told her all that Boaz had done for her.",
         { type: "verse", marker: "v", number: "17" },
-        "And she said, “He gave me these six measures of barley, for he said, ‘Do not go back to your mother-in-law empty-handed. ’”",
+        "And she said, “He gave me these six measures of barley, for he said, ‘Do not go back to your mother-in-law empty-handed.’”",
       ],
     },
     {
@@ -646,7 +642,9 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "The Hebrew word for <i>kinsman-redeemer</i> or <i>guardian-redeemer</i> is a legal term for the kinsman who redeems or vindicates a relative; also in verses 3, 6, 8, and 14; see Leviticus 25:25–55.",
+                "The Hebrew word for kinsman-redeemer or guardian-redeemer is a legal term for the kinsman who redeems or vindicates a relative; also in verses 3, 6, 8, and 14; see",
+                { type: "char", marker: "xt", content: ["Leviticus 25:25–55"] },
+                ".",
               ],
             },
           ],
@@ -680,7 +678,7 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Many Hebrew manuscripts, LXX, Vulgate, and Syriac; most Hebrew manuscripts <i>he</i>",
+                "Many Hebrew manuscripts, LXX, Vulgate, and Syriac; most Hebrew manuscripts he",
               ],
             },
           ],
@@ -766,13 +764,7 @@ export const before = {
       ],
     },
     { type: "para", marker: "s1", content: ["The Line of David"] },
-    {
-      type: "para",
-      marker: "r",
-      content: [
-        "<br /><span class=|cross|>(<a href =|../matthew/1.htm|>Matthew 1:1–17</a>; <a href =|../luke/3.htm#23|>Luke 3:23–38</a>)</span>",
-      ],
-    },
+    { type: "para", marker: "r", content: ["(Matthew 1:1–17; Luke 3:23–38)"] },
     {
       type: "para",
       marker: "p",
@@ -821,12 +813,13 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "A few Hebrew manuscripts, some LXX manuscripts, and Vulgate (see also verse 21 and LXX of 1 Chronicles 2:11); most Hebrew manuscripts <i>Salma</i>",
+                "A few Hebrew manuscripts, some LXX manuscripts, and Vulgate (see also verse 21 and LXX of 1 Chronicles 2:11); most Hebrew manuscripts Salma",
               ],
             },
           ],
           caller: "+",
         },
+        "",
       ],
     },
     {

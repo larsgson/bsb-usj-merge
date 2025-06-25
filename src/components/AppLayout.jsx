@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from 'react'
 import Header from './Header'
-import { after } from '../data/afterR'
-import { before } from '../data/beforeR'
+import { after } from '../data/after'
+import { before } from '../data/before'
 import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 // import CircularProgress from '@mui/material/CircularProgress'
@@ -24,19 +24,20 @@ export default function AppLayout() {
   const cleanupString = (str) => {
     // const tempStr = str.replace(/ʼ/g, "’") // replace "ʼ" with "’"
     // The above should hopefully be possible to handle - in reverse - from the generated usj from Martin Hosken
-    const tempStr = str.replace(/(\S+ )\s+/g, "$1") // remove multiple " "
-    const tempStr2 = tempStr.replace(/ \. /g, ". ") // replace " . " with ". "
-    const tempStr3 = tempStr2.replace(/ , /g, ", ") // replace " , " with ", "
-    const tempStr4 = tempStr3.replace(/([.|?|!]) ”/g, "$1”") // replace ". ”" with ".”"
-    const tempStr5 = tempStr4.replace(/, ”/g, ",”") // replace ". ”" with ".”"
-    const tempStr6 = tempStr5.replace(/“ (\S+)/g, "“$1") // replace "“ " with "“"
-    const tempStr7 = tempStr6.replace(/”(\S+)/g, "” $1") // replace "”" with "” "
+    let tempStr = str.replace(/(\S+ )\s+/g, "$1") // remove multiple " "
+    tempStr = tempStr.replace(/ \. /g, ". ") // replace " . " with ". "
+    tempStr = tempStr.replace(/ , /g, ", ") // replace " , " with ", "
+    tempStr = tempStr.replace(/([.|?|!]) ”/g, "$1”") // replace ". ”" with ".”"
+    tempStr = tempStr.replace(/, ”/g, ",”") // replace ". ”" with ".”"
+    tempStr = tempStr.replace(/ʼ/g, "’") // replace "ʼ" with "’"
+    tempStr = tempStr.replace(/“ (\S+)/g, "“$1") // replace "“ " with "“"
+    tempStr = tempStr.replace(/”(\S+)/g, "” $1") // replace "”" with "” "
     // remove " " at the beginning (trim)
-    const tempStr8 = strip(tempStr7)
-    if (str!==tempStr8) {
-      console.log("'"+str+"' -> '"+tempStr8+"'")
-    }
-    return tempStr8
+    tempStr = strip(tempStr)
+    // if (str!==tempStr8) {
+    //   console.log("'"+str+"' -> '"+tempStr8+"'")
+    // }
+    return tempStr
   }
 
   const cleanupItem = (item) => {
@@ -64,7 +65,11 @@ export default function AppLayout() {
     const result = allKeys.reduce((acc, key) => {
       let item = obj[key]
       const useItem = cleanupItem(item)
-      return { ...acc, [key]: useItem }
+      if (key !== "sid") { // suppress all "sid" entries
+        return { ...acc, [key]: useItem }
+      } else {
+        return { ...acc }
+      }
     }, {})
     return result
   }
