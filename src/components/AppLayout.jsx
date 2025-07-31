@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { useState, useEffect } from 'react'
 import Header from './Header'
+// import { after } from '../data/afterG'
+// import { before } from '../data/beforeG'
 import { after } from '../data/after'
 import { before } from '../data/before'
 import Box from '@mui/material/Box'

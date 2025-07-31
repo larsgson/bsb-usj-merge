@@ -68,7 +68,15 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["1:9"] },
-            { type: "char", marker: "ft", content: ["Or in my spirit"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "Or ",
+                { type: "char", marker: "fq", content: ["in my spirit"] },
+                "",
+              ],
+            },
           ],
           caller: "+",
         },
@@ -95,7 +103,14 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Literally but have been prevented"],
+              content: [
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: ["but have been prevented"],
+                },
+                "",
+              ],
             },
           ],
           caller: "+",
@@ -111,7 +126,14 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Literally to Greeks and barbarians"],
+              content: [
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: ["to Greeks and barbarians"],
+                },
+                "",
+              ],
             },
           ],
           caller: "+",
@@ -138,7 +160,14 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Literally For in it is revealed the righteousness of God from faith to faith",
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: [
+                    "For in it is revealed the righteousness of God from faith to faith",
+                  ],
+                },
+                "",
               ],
             },
           ],
@@ -150,11 +179,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["1:17"] },
-            { type: "char", marker: "ft", content: ["Habakkuk 2:4"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Habakkuk 2:4"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     { type: "para", marker: "s1", content: ["God’s Wrath against Sin"] },
@@ -195,7 +230,15 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["1:25"] },
-            { type: "char", marker: "ft", content: ["Or forever blessed"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "Or ",
+                { type: "char", marker: "fq", content: ["forever blessed"] },
+                "",
+              ],
+            },
           ],
           caller: "+",
         },
@@ -264,11 +307,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["2:6"] },
-            { type: "char", marker: "ft", content: ["Psalm 62:12"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 62:12"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "7" },
         "To those who by perseverance in doing good seek glory, honor, and immortality, He will give eternal life.",
         { type: "verse", marker: "v", number: "8" },
@@ -315,7 +364,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["BYZ and TR through Jesus Christ"],
+              content: [
+                "BYZ and TR ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["through Jesus Christ"],
+                },
+                "",
+              ],
             },
           ],
           caller: "+",
@@ -335,7 +392,7 @@ export const before = {
         { type: "verse", marker: "v", number: "19" },
         "if you are convinced that you are a guide for the blind, a light for those in darkness,",
         { type: "verse", marker: "v", number: "20" },
-        "an instructor of the foolish, a teacher of infants, because you have in the law the embodiment of knowledge and truth —",
+        "an instructor of the foolish, a teacher of infants, because you have in the law the embodiment of knowledge and truth—",
         { type: "verse", marker: "v", number: "21" },
         "you, then, who teach others, do you not teach yourself? You who preach against stealing, do you steal?",
         { type: "verse", marker: "v", number: "22" },
@@ -352,12 +409,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 52:5 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 52:5"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -397,7 +457,15 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["3:2"] },
-            { type: "char", marker: "ft", content: ["Or the oracles"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "Or ",
+                { type: "char", marker: "fq", content: ["the oracles"] },
+                "",
+              ],
+            },
           ],
           caller: "+",
         },
@@ -411,7 +479,7 @@ export const before = {
         { type: "verse", marker: "v", number: "3" },
         "What if some did not have faith? Will their lack of faith nullify God’s faithfulness?",
         { type: "verse", marker: "v", number: "4" },
-        "Certainly not! Let God be true and every man a liar. As it is written :",
+        "Certainly not! Let God be true and every man a liar. As it is written:",
       ],
     },
     {
@@ -432,12 +500,21 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Or when You are judged; Psalm 51:4 (see also LXX)"],
+              content: [
+                "Or ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["when You are judged"],
+                },
+                ";",
+                { type: "char", marker: "xt", content: ["Psalm 51:4"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -467,7 +544,7 @@ export const before = {
         { type: "verse", marker: "v", number: "9" },
         "What then? Are we any better? Not at all. For we have already made the charge that Jews and Greeks alike are all under sin.",
         { type: "verse", marker: "v", number: "10" },
-        "As it is written :",
+        "As it is written:",
       ],
     },
     { type: "para", marker: "q1", content: ["“There is no one righteous,"] },
@@ -508,12 +585,17 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Psalm 14:1–3 and Psalm 53:1–3 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 14:1–3"] },
+                "and",
+                { type: "char", marker: "xt", content: ["Psalm 53:1–3"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -534,7 +616,14 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["3:13"] },
-            { type: "char", marker: "ft", content: ["Psalm 5:9"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 5:9"] },
+              ],
+            },
           ],
           caller: "+",
         },
@@ -550,11 +639,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["3:13"] },
-            { type: "char", marker: "ft", content: ["Psalm 140:3"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 140:3"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -578,12 +673,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Psalm 10:7 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 10:7"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -616,12 +714,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 59:7–8 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 59:7–8"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -642,11 +743,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["3:18"] },
-            { type: "char", marker: "ft", content: ["Psalm 36:1"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 36:1"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -690,7 +797,15 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["3:25"] },
-            { type: "char", marker: "ft", content: ["Or as a propitiation"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "Or ",
+                { type: "char", marker: "fq", content: ["as a propitiation"] },
+                "",
+              ],
+            },
           ],
           caller: "+",
         },
@@ -749,11 +864,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["4:3"] },
-            { type: "char", marker: "ft", content: ["Genesis 15:6"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Genesis 15:6"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -798,12 +919,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Psalm 32:1–2 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 32:1–2"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -823,13 +947,19 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Literally How then was it reckoned—being in circumcision, or in  uncircumcision? Not in circumcision, but in uncircumcision.",
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: [
+                    "How then was it reckoned—being in circumcision, or in  uncircumcision? Not in circumcision, but in uncircumcision.",
+                  ],
+                },
+                "",
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -861,15 +991,22 @@ export const before = {
       marker: "p",
       content: [
         { type: "verse", marker: "v", number: "16" },
-        "Therefore, the promise comes by faith, so that it may rest on grace and may be guaranteed to all Abraham’s offspring — not only to those who are of the law, but also to those who are of the faith of Abraham. He is the father of us all.",
+        "Therefore, the promise comes by faith, so that it may rest on grace and may be guaranteed to all Abraham’s offspring—not only to those who are of the law, but also to those who are of the faith of Abraham. He is the father of us all.",
         { type: "verse", marker: "v", number: "17" },
-        "As it is written : “I have made you a father of many nations.”",
+        "As it is written: “I have made you a father of many nations.”",
         {
           type: "note",
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["4:17"] },
-            { type: "char", marker: "ft", content: ["Genesis 17:5"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Genesis 17:5"] },
+              ],
+            },
           ],
           caller: "+",
         },
@@ -887,11 +1024,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["4:18"] },
-            { type: "char", marker: "ft", content: ["Genesis 15:5"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Genesis 15:5"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "19" },
         "Without weakening in his faith, he acknowledged the decrepitness of his body (since he was about a hundred years old) and the lifelessness of Sarah’s womb.",
         { type: "verse", marker: "v", number: "20" },
@@ -905,11 +1048,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["4:22"] },
-            { type: "char", marker: "ft", content: ["Genesis 15:6"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Genesis 15:6"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -919,7 +1068,7 @@ export const before = {
         { type: "verse", marker: "v", number: "23" },
         "Now the words “it was credited to him” were written not only for Abraham,",
         { type: "verse", marker: "v", number: "24" },
-        "but also for us, to whom righteousness will be credited— for us who believe in Him who raised Jesus our Lord from the dead.",
+        "but also for us, to whom righteousness will be credited—for us who believe in Him who raised Jesus our Lord from the dead.",
         { type: "verse", marker: "v", number: "25" },
         "He was delivered over to death for our trespasses and was raised to life for our justification.",
       ],
@@ -937,7 +1086,15 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["5:1"] },
-            { type: "char", marker: "ft", content: ["Or let us have"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "Or ",
+                { type: "char", marker: "fq", content: ["let us have"] },
+                "",
+              ],
+            },
           ],
           caller: "+",
         },
@@ -952,7 +1109,11 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Or exult; also in verses 3 and 11"],
+              content: [
+                "Or ",
+                { type: "char", marker: "fq", content: ["exult"] },
+                "; also in verses 3 and 11",
+              ],
             },
           ],
           caller: "+",
@@ -1084,7 +1245,7 @@ export const before = {
         { type: "verse", marker: "v", number: "8" },
         "Now if we died with Christ, we believe that we will also live with Him.",
         { type: "verse", marker: "v", number: "9" },
-        "For we know that since Christ was raised from the dead, He cannot die again ; death no longer has dominion over Him.",
+        "For we know that since Christ was raised from the dead, He cannot die again; death no longer has dominion over Him.",
         { type: "verse", marker: "v", number: "10" },
         "The death He died, He died to sin once for all; but the life He lives, He lives to God.",
         { type: "verse", marker: "v", number: "11" },
@@ -1182,12 +1343,16 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Exodus 20:17; Deuteronomy 5:21"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Exodus 20:17"] },
+                ";",
+                { type: "char", marker: "xt", content: ["Deuteronomy 5:21"] },
+              ],
             },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "8" },
         "But sin, seizing its opportunity through the commandment, produced in me every kind of covetous desire. For apart from the law, sin is dead.",
       ],
@@ -1252,7 +1417,7 @@ export const before = {
       marker: "p",
       content: [
         { type: "verse", marker: "v", number: "21" },
-        "So this is the principle I have discovered : When I want to do good, evil is right there with me.",
+        "So this is the principle I have discovered: When I want to do good, evil is right there with me.",
         { type: "verse", marker: "v", number: "22" },
         "For in my inner being I delight in God’s law.",
         { type: "verse", marker: "v", number: "23" },
@@ -1266,13 +1431,17 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Literally captive to the law of sin being in my members.",
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: ["captive to the law of sin being in my members."],
+                },
+                "",
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -1314,13 +1483,20 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "BYZ and TR in Christ Jesus, who do not walk according to the flesh but according to the Spirit.",
+                "BYZ and TR ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: [
+                    "in Christ Jesus, who do not walk according to the flesh but according to the Spirit.",
+                  ],
+                },
+                "",
               ],
             },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "2" },
         "For in Christ Jesus the law of the Spirit of life set you",
         {
@@ -1328,7 +1504,15 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["8:2"] },
-            { type: "char", marker: "ft", content: ["BYZ and TR me"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "BYZ and TR ",
+                { type: "char", marker: "fq", content: ["me"] },
+                "",
+              ],
+            },
           ],
           caller: "+",
         },
@@ -1344,7 +1528,12 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Literally in the likeness of sinful flesh and for sin",
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: ["in the likeness of sinful flesh and for sin"],
+                },
+                "",
               ],
             },
           ],
@@ -1376,7 +1565,12 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Literally Those being in the flesh; similarly in verse 9",
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: ["Those being in the flesh"],
+                },
+                "; similarly in verse 9",
               ],
             },
           ],
@@ -1401,7 +1595,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Or yet the Spirit is life"],
+              content: [
+                "Or ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["yet the Spirit is life"],
+                },
+                "",
+              ],
             },
           ],
           caller: "+",
@@ -1417,7 +1619,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["NA, BYZ, and TR raised Christ from the dead"],
+              content: [
+                "NA, BYZ, and TR ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["raised Christ from the dead"],
+                },
+                "",
+              ],
             },
           ],
           caller: "+",
@@ -1447,7 +1657,7 @@ export const before = {
         { type: "verse", marker: "v", number: "16" },
         "The Spirit Himself testifies with our spirit that we are God’s children.",
         { type: "verse", marker: "v", number: "17" },
-        "And if we are children, then we are heirs: heirs of God and co-heirs with Christ — if indeed we suffer with Him, so that we may also be glorified with Him.",
+        "And if we are children, then we are heirs: heirs of God and co-heirs with Christ—if indeed we suffer with Him, so that we may also be glorified with Him.",
       ],
     },
     { type: "para", marker: "s1", content: ["Future Glory"] },
@@ -1515,7 +1725,7 @@ export const before = {
         { type: "verse", marker: "v", number: "33" },
         "Who will bring any charge against God’s elect? It is God who justifies.",
         { type: "verse", marker: "v", number: "34" },
-        "Who is there to condemn us? For Christ Jesus, who died, and more than that was raised to life, is at the right hand of God— and He is interceding for us.",
+        "Who is there to condemn us? For Christ Jesus, who died, and more than that was raised to life, is at the right hand of God—and He is interceding for us.",
       ],
     },
     { type: "para", marker: "s1", content: ["More than Conquerors"] },
@@ -1545,11 +1755,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["8:36"] },
-            { type: "char", marker: "ft", content: ["Psalm 44:22"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 44:22"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -1585,7 +1801,15 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["9:5"] },
-            { type: "char", marker: "ft", content: ["Or forever blessed"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "Or ",
+                { type: "char", marker: "fq", content: ["forever blessed"] },
+                "",
+              ],
+            },
           ],
           caller: "+",
         },
@@ -1611,11 +1835,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["9:7"] },
-            { type: "char", marker: "ft", content: ["Genesis 21:12"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Genesis 21:12"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "8" },
         "So it is not the children of the flesh who are God’s children, but it is the children of the promise who are regarded as offspring.",
         { type: "verse", marker: "v", number: "9" },
@@ -1625,11 +1855,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["9:9"] },
-            { type: "char", marker: "ft", content: ["Genesis 18:14"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Genesis 18:14"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -1647,11 +1883,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["9:12"] },
-            { type: "char", marker: "ft", content: ["Genesis 25:23"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Genesis 25:23"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "13" },
         "So it is written: “Jacob I loved, but Esau I hated.”",
         {
@@ -1659,11 +1901,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["9:13"] },
-            { type: "char", marker: "ft", content: ["Malachi 1:2–3"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Malachi 1:2–3"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -1691,11 +1939,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["9:15"] },
-            { type: "char", marker: "ft", content: ["Exodus 33:19"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Exodus 33:19"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -1705,7 +1959,7 @@ export const before = {
         { type: "verse", marker: "v", number: "16" },
         "So then, it does not depend on man’s desire or effort, but on God’s mercy.",
         { type: "verse", marker: "v", number: "17" },
-        "For the Scripture says to Pharaoh : “I raised you up for this very purpose, that I might display My power in you, and that My name might be proclaimed in all the earth.”",
+        "For the Scripture says to Pharaoh: “I raised you up for this very purpose, that I might display My power in you, and that My name might be proclaimed in all the earth.”",
         {
           type: "note",
           marker: "f",
@@ -1714,12 +1968,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Exodus 9:16 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Exodus 9:16"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "18" },
         "Therefore God has mercy on whom He wants to have mercy, and He hardens whom He wants to harden.",
       ],
@@ -1740,12 +1997,16 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 29:16; Isaiah 45:9"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 29:16"] },
+                ";",
+                { type: "char", marker: "xt", content: ["Isaiah 45:9"] },
+              ],
             },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "21" },
         "Does not the potter have the right to make from the same lump of clay one vessel for special occasions and another for common use?",
       ],
@@ -1757,7 +2018,7 @@ export const before = {
         { type: "verse", marker: "v", number: "22" },
         "What if God, intending to show His wrath and make His power known, bore with great patience the vessels of His wrath, prepared for destruction?",
         { type: "verse", marker: "v", number: "23" },
-        "What if He did this to make the riches of His glory known to the vessels of His mercy, whom He prepared in advance for glory —",
+        "What if He did this to make the riches of His glory known to the vessels of His mercy, whom He prepared in advance for glory—",
         { type: "verse", marker: "v", number: "24" },
         "including us, whom He has called not only from the Jews, but also from the Gentiles?",
         { type: "verse", marker: "v", number: "25" },
@@ -1779,11 +2040,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["9:25"] },
-            { type: "char", marker: "ft", content: ["Hosea 2:23"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Hosea 2:23"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -1798,7 +2065,7 @@ export const before = {
         "“It will happen that in the very place where it was said to them,",
       ],
     },
-    { type: "para", marker: "q2", content: ["‘You are not My people, ’"] },
+    { type: "para", marker: "q2", content: ["‘You are not My people,’"] },
     { type: "para", marker: "q1", content: ["they will be called"] },
     {
       type: "para",
@@ -1810,11 +2077,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["9:26"] },
-            { type: "char", marker: "ft", content: ["Hosea 1:10"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Hosea 1:10"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -1858,12 +2131,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 10:22–23 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 10:22–23"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -1897,12 +2173,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 1:9 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 1:9"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     { type: "para", marker: "s1", content: ["Israel’s Unbelief"] },
@@ -1915,7 +2194,7 @@ export const before = {
         { type: "verse", marker: "v", number: "31" },
         "but Israel, who pursued a law of righteousness, has not attained it.",
         { type: "verse", marker: "v", number: "32" },
-        "Why not ? Because their pursuit was not by faith, but as if it were by works. They stumbled over the stumbling stone,",
+        "Why not? Because their pursuit was not by faith, but as if it were by works. They stumbled over the stumbling stone,",
         { type: "verse", marker: "v", number: "33" },
         "as it is written:",
       ],
@@ -1935,7 +2214,14 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["9:33"] },
-            { type: "char", marker: "ft", content: ["Isaiah 8:14"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 8:14"] },
+              ],
+            },
           ],
           caller: "+",
         },
@@ -1959,12 +2245,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 28:16 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 28:16"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     { type: "chapter", marker: "c", number: "10" },
@@ -1989,7 +2278,7 @@ export const before = {
       marker: "p",
       content: [
         { type: "verse", marker: "v", number: "5" },
-        "For concerning the righteousness that is by the law, Moses writes : “The man who does these things will live by them.”",
+        "For concerning the righteousness that is by the law, Moses writes: “The man who does these things will live by them.”",
         {
           type: "note",
           marker: "f",
@@ -1999,31 +2288,39 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Leviticus 18:5; see",
-                {
-                  type: "char",
-                  marker: "xt",
-                  content: ["also Ezekiel 20:11, 13, and 21"],
-                },
+                "",
+                { type: "char", marker: "xt", content: ["Leviticus 18:5"] },
+                "; see also",
+                { type: "char", marker: "xt", content: ["Ezekiel 20:11"] },
+                ",",
+                { type: "char", marker: "xt", content: ["13"] },
+                ", and",
+                { type: "char", marker: "xt", content: ["21"] },
                 ".",
               ],
             },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "6" },
-        "But the righteousness that is by faith says : “Do not say in your heart, ‘Who will ascend into heaven?’",
+        "But the righteousness that is by faith says: “Do not say in your heart, ‘Who will ascend into heaven?’",
         {
           type: "note",
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["10:6"] },
-            { type: "char", marker: "ft", content: ["Deuteronomy 30:12"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Deuteronomy 30:12"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "(that is, to bring Christ down )",
+        "(that is, to bring Christ down)",
         { type: "verse", marker: "v", number: "7" },
         "or, ‘Who will descend into the Abyss?’",
         {
@@ -2031,7 +2328,15 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["10:7"] },
-            { type: "char", marker: "ft", content: ["See Deuteronomy 30:13."] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "See",
+                { type: "char", marker: "xt", content: ["Deuteronomy 30:13"] },
+                ".",
+              ],
+            },
           ],
           caller: "+",
         },
@@ -2049,7 +2354,14 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["10:8"] },
-            { type: "char", marker: "ft", content: ["Deuteronomy 30:14"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Deuteronomy 30:14"] },
+              ],
+            },
           ],
           caller: "+",
         },
@@ -2074,12 +2386,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 28:16 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 28:16"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "12" },
         "For there is no difference between Jew and Greek: The same Lord is Lord of all, and gives richly to all who call on Him,",
         { type: "verse", marker: "v", number: "13" },
@@ -2089,11 +2404,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["10:13"] },
-            { type: "char", marker: "ft", content: ["Joel 2:32"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Joel 2:32"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2103,7 +2424,7 @@ export const before = {
         { type: "verse", marker: "v", number: "14" },
         "How then can they call on the One in whom they have not believed? And how can they believe in the One of whom they have not heard? And how can they hear without someone to preach?",
         { type: "verse", marker: "v", number: "15" },
-        "And how can they preach unless they are sent? As it is written: “How beautiful are the feet of those who bring good news.”",
+        "And how can they preach unless they are sent? As it is written: “How beautiful are the feet of those who bring good news!”",
         {
           type: "note",
           marker: "f",
@@ -2113,13 +2434,26 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Literally good news of good things; BYZ and TR How beautiful are the feet of those who bring good news of peace, who bring good news of good things; Isaiah 52:7",
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: ["good news of good things"],
+                },
+                "; BYZ and TR ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: [
+                    "How beautiful are the feet of those who bring good news of peace, who bring good news of good things",
+                  ],
+                },
+                ";",
+                { type: "char", marker: "xt", content: ["Isaiah 52:7"] },
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2133,11 +2467,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["10:16"] },
-            { type: "char", marker: "ft", content: ["Isaiah 53:1"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 53:1"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "17" },
         "Consequently, faith comes by hearing, and hearing by the word of Christ.",
       ],
@@ -2147,7 +2487,7 @@ export const before = {
       marker: "p",
       content: [
         { type: "verse", marker: "v", number: "18" },
-        "But I ask, did they not hear ? Indeed they did:",
+        "But I ask, did they not hear? Indeed they did:",
       ],
     },
     {
@@ -2168,12 +2508,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Psalm 19:4 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 19:4"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2202,12 +2545,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Deuteronomy 32:21 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Deuteronomy 32:21"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2233,11 +2579,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["10:20"] },
-            { type: "char", marker: "ft", content: ["Isaiah 65:1"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 65:1"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2266,12 +2618,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 65:2 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 65:2"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     { type: "chapter", marker: "c", number: "11" },
@@ -2285,13 +2640,22 @@ export const before = {
         { type: "verse", marker: "v", number: "2" },
         "God did not reject His people, whom He foreknew. Do you not know what the Scripture says about Elijah, how he appealed to God against Israel:",
         { type: "verse", marker: "v", number: "3" },
-        "“Lord, they have killed Your prophets and torn down Your altars. I am the only one left, and they are seeking my life as well ”",
+        "“Lord, they have killed Your prophets and torn down Your altars. I am the only one left, and they are seeking my life as well”",
         {
           type: "note",
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["11:3"] },
-            { type: "char", marker: "ft", content: ["1 Kings 19:10, 14"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["1 Kings 19:10"] },
+                ",",
+                { type: "char", marker: "xt", content: ["14"] },
+              ],
+            },
           ],
           caller: "+",
         },
@@ -2309,11 +2673,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["11:4"] },
-            { type: "char", marker: "ft", content: ["1 Kings 19:18"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["1 Kings 19:18"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2333,13 +2703,20 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "BYZ and TR include But if it is by works, then it is no longer grace; otherwise work is no longer work.",
+                "BYZ and TR include ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: [
+                    "But if it is by works, then it is no longer grace; otherwise work is no longer work.",
+                  ],
+                },
+                "",
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2372,12 +2749,17 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["See Deuteronomy 29:4 and Isaiah 29:10."],
+              content: [
+                "See",
+                { type: "char", marker: "xt", content: ["Deuteronomy 29:4"] },
+                "and",
+                { type: "char", marker: "xt", content: ["Isaiah 29:10"] },
+                ".",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2416,12 +2798,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Psalm 69:22–23 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 69:22–23"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     { type: "para", marker: "s1", content: ["The Ingrafting of the Gentiles"] },
@@ -2440,7 +2825,13 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Or did they stumble so as to lose their share? Literally did they stumble that they might fall?",
+                "Or <i>did they stumble so as to lose their share?</i> Literally ",
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: ["did they stumble that they might fall?"],
+                },
+                "",
               ],
             },
           ],
@@ -2493,7 +2884,17 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Or He will perhaps not; SBL, NE, and WH He will not"],
+              content: [
+                "Or ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["He will perhaps not"],
+                },
+                "; SBL, NE, and WH ",
+                { type: "char", marker: "fq", content: ["He will not"] },
+                "",
+              ],
             },
           ],
           caller: "+",
@@ -2519,7 +2920,7 @@ export const before = {
       marker: "p",
       content: [
         { type: "verse", marker: "v", number: "25" },
-        "I do not want you to be ignorant of this mystery, brothers, so that you will not be conceited : A hardening in part has come to Israel, until the full number of the Gentiles has come in.",
+        "I do not want you to be ignorant of this mystery, brothers, so that you will not be conceited: A hardening in part has come to Israel, until the full number of the Gentiles has come in.",
         { type: "verse", marker: "v", number: "26" },
         "And so all Israel will be saved, as it is written:",
       ],
@@ -2556,15 +2957,16 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Isaiah 27:9 and Isaiah 59:20–21; see",
-                { type: "char", marker: "xt", content: ["also LX"] },
-                "X",
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 27:9"] },
+                "and",
+                { type: "char", marker: "xt", content: ["Isaiah 59:20–21"] },
+                "; see also LXX",
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2572,7 +2974,7 @@ export const before = {
       marker: "p",
       content: [
         { type: "verse", marker: "v", number: "28" },
-        "Regarding the gospel, they are enemies on your account ; but regarding election, they are loved on account of the patriarchs.",
+        "Regarding the gospel, they are enemies on your account; but regarding election, they are loved on account of the patriarchs.",
         { type: "verse", marker: "v", number: "29" },
         "For God’s gifts and His call are irrevocable.",
       ],
@@ -2594,13 +2996,23 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Literally may now receive mercy through your mercy; BYZ and TR may receive mercy through your mercy",
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: ["may now receive mercy through your mercy"],
+                },
+                "; BYZ and TR ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["may receive mercy through your mercy"],
+                },
+                "",
               ],
             },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "32" },
         "For God has consigned everyone to disobedience so that He may have mercy on everyone.",
       ],
@@ -2647,12 +3059,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 40:13 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 40:13"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2673,11 +3088,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["11:35"] },
-            { type: "char", marker: "ft", content: ["Job 41:11"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Job 41:11"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2714,12 +3135,19 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Or your reasonable service"],
+              content: [
+                "Or ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["your reasonable service"],
+                },
+                "",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "2" },
         "Do not be conformed to this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what is the good, pleasing, and perfect will of God.",
       ],
@@ -2822,12 +3250,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Deuteronomy 32:35 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Deuteronomy 32:35"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2862,12 +3293,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Proverbs 25:21–22 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Proverbs 25:21–22"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -2931,22 +3365,37 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Exodus 20:13–17; Deuteronomy 5:17–21"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Exodus 20:13–17"] },
+                ";",
+                {
+                  type: "char",
+                  marker: "xt",
+                  content: ["Deuteronomy 5:17–21"],
+                },
+              ],
             },
           ],
           caller: "+",
         },
-        "and any other commandments, are summed up in this one decree : “Love your neighbor as yourself.”",
+        "and any other commandments, are summed up in this one decree: “Love your neighbor as yourself.”",
         {
           type: "note",
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["13:9"] },
-            { type: "char", marker: "ft", content: ["Leviticus 19:18"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Leviticus 19:18"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "10" },
         "Love does no wrong to its neighbor. Therefore love is the fulfillment of the law.",
       ],
@@ -2973,9 +3422,9 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Or put on; see",
-                { type: "char", marker: "xt", content: ["verse 12"] },
-                ".",
+                "Or ",
+                { type: "char", marker: "fq", content: ["put on"] },
+                "; see verse 12.",
               ],
             },
           ],
@@ -3001,12 +3450,19 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Or without quarreling over disputable matters"],
+              content: [
+                "Or ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["without quarreling over disputable matters"],
+                },
+                "",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "2" },
         "For one person has faith to eat all things, while another, who is weak, eats only vegetables.",
         { type: "verse", marker: "v", number: "3" },
@@ -3032,7 +3488,15 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "BYZ and TR include he who does not regard the day, to the Lord he does not regard it;",
+                "BYZ and TR include ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: [
+                    "he who does not regard the day, to the Lord he does not regard it;",
+                  ],
+                },
+                "",
               ],
             },
           ],
@@ -3080,13 +3544,26 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Or will give praise to God or will acknowledge God; Isaiah 45:23 (see also LXX)",
+                "Or ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["will give praise to God"],
+                },
+                " or ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["will acknowledge God"],
+                },
+                ";",
+                { type: "char", marker: "xt", content: ["Isaiah 45:23"] },
+                "(see also LXX)",
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -3152,13 +3629,18 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "SBL, BYZ, and TR include or to be hindered or weakened.",
+                "SBL, BYZ, and TR include ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["or to be hindered or weakened"],
+                },
+                ".",
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -3176,7 +3658,14 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Literally Keep the faith that you have to yourself before God",
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: [
+                    "Keep the faith that you have to yourself before God",
+                  ],
+                },
+                "",
               ],
             },
           ],
@@ -3194,13 +3683,14 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Some manuscripts place the text of Romans 16:25–27 here.",
+                "Some manuscripts place the text of",
+                { type: "char", marker: "xt", content: ["Romans 16:25–27"] },
+                "here.",
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     { type: "chapter", marker: "c", number: "15" },
@@ -3220,11 +3710,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["15:3"] },
-            { type: "char", marker: "ft", content: ["Psalm 69:9"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 69:9"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "4" },
         "For everything that was written in the past was written for our instruction, so that through endurance and the encouragement of the Scriptures, we might have hope.",
       ],
@@ -3274,12 +3770,16 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["2 Samuel 22:50; Psalm 18:49"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["2 Samuel 22:50"] },
+                ";",
+                { type: "char", marker: "xt", content: ["Psalm 18:49"] },
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -3300,11 +3800,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["15:10"] },
-            { type: "char", marker: "ft", content: ["Deuteronomy 32:43"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Deuteronomy 32:43"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -3327,11 +3833,17 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["15:11"] },
-            { type: "char", marker: "ft", content: ["Psalm 117:1"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Psalm 117:1"] },
+              ],
+            },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -3365,12 +3877,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 11:10 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 11:10"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -3417,7 +3932,19 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "SBL the power of the Spirit; NE and WH the power of the Holy Spirit",
+                "SBL ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["the power of the Spirit"],
+                },
+                "; NE and WH ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["the power of the Holy Spirit"],
+                },
+                "",
               ],
             },
           ],
@@ -3454,12 +3981,15 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Isaiah 52:15 (see also LXX)"],
+              content: [
+                "",
+                { type: "char", marker: "xt", content: ["Isaiah 52:15"] },
+                "(see also LXX)",
+              ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -3510,7 +4040,11 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["TR and BYZ include of the gospel."],
+              content: [
+                "TR and BYZ include ",
+                { type: "char", marker: "fq", content: ["of the gospel"] },
+                ".",
+              ],
             },
           ],
           caller: "+",
@@ -3545,13 +4079,16 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Some manuscripts do not include Amen. One early manuscript places the text of Romans 16:25–27 here.",
+                "Some manuscripts do not include ",
+                { type: "char", marker: "fq", content: ["Amen."] },
+                " One early manuscript places the text of",
+                { type: "char", marker: "xt", content: ["Romans 16:25–27"] },
+                "here.",
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     { type: "chapter", marker: "c", number: "16" },
@@ -3567,7 +4104,15 @@ export const before = {
           marker: "f",
           content: [
             { type: "char", marker: "fr", content: ["16:1"] },
-            { type: "char", marker: "ft", content: ["Or deaconess"] },
+            {
+              type: "char",
+              marker: "ft",
+              content: [
+                "Or ",
+                { type: "char", marker: "fq", content: ["deaconess"] },
+                "",
+              ],
+            },
           ],
           caller: "+",
         },
@@ -3591,7 +4136,10 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Prisca is a variant of Priscilla; see",
+                { type: "char", marker: "fq", content: ["Prisca"] },
+                " is a variant of ",
+                { type: "char", marker: "fq", content: ["Priscilla"] },
+                "; see",
                 { type: "char", marker: "xt", content: ["Acts 18:2"] },
                 ".",
               ],
@@ -3620,13 +4168,13 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Literally in Asia; Asia was a Roman province in what is now western Turkey.",
+                { type: "char", marker: "fqa", content: ["in Asia"] },
+                "; Asia was a Roman province in what is now western Turkey.",
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
     {
@@ -3651,7 +4199,11 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Some translators Junias"],
+              content: [
+                "Some translators ",
+                { type: "char", marker: "fq", content: ["Junias"] },
+                "",
+              ],
             },
           ],
           caller: "+",
@@ -3789,7 +4341,11 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["NA, NE, and WH Lord Jesus"],
+              content: [
+                "NA, NE, and WH ",
+                { type: "char", marker: "fq", content: ["Lord Jesus"] },
+                "",
+              ],
             },
           ],
           caller: "+",
@@ -3841,15 +4397,21 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "SBL, BYZ, and TR include <span class=|fnv|>24</span>May the grace of our Lord Jesus Christ be with you all. Amen.",
+                "SBL, BYZ, and TR include ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: [
+                    "<span class=|fnv|>24</span>May the grace of our Lord Jesus Christ be with you all. Amen.",
+                  ],
+                },
+                "",
               ],
             },
           ],
           caller: "+",
         },
-        "",
         { type: "verse", marker: "v", number: "24" },
-        "",
       ],
     },
     { type: "para", marker: "s1", content: ["Doxology"] },
@@ -3870,7 +4432,14 @@ export const before = {
             {
               type: "char",
               marker: "ft",
-              content: ["Literally the obedience of faith"],
+              content: [
+                {
+                  type: "char",
+                  marker: "fqa",
+                  content: ["the obedience of faith"],
+                },
+                "",
+              ],
             },
           ],
           caller: "+",
@@ -3887,13 +4456,16 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Some manuscripts place the text of verses 25–27 after Romans 14:23 or after Romans 15:33.",
+                "Some manuscripts place the text of verses 25–27 after",
+                { type: "char", marker: "xt", content: ["Romans 14:23"] },
+                "or after",
+                { type: "char", marker: "xt", content: ["Romans 15:33"] },
+                ".",
               ],
             },
           ],
           caller: "+",
         },
-        "",
       ],
     },
   ],
