@@ -2825,7 +2825,13 @@ export const before = {
               type: "char",
               marker: "ft",
               content: [
-                "Or <i>did they stumble so as to lose their share?</i> Literally ",
+                "Or ",
+                {
+                  type: "char",
+                  marker: "fq",
+                  content: ["did they stumble so as to lose their share?"],
+                },
+                " Literally ",
                 {
                   type: "char",
                   marker: "fqa",
