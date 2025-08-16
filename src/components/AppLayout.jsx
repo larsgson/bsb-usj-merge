@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Header from './Header'
 // import { after } from '../data/afterG'
 // import { before } from '../data/beforeG'
@@ -18,6 +18,8 @@ export default function AppLayout() {
   const [usjLoaded, setUsjLoaded] = useState(false)
   const [toggle, setToggle] = useState(false)
   const [bibleBook, setBibleBook] = useState("GEN")
+  const [cleanedUpManualUSJ,setCleanedUpManualUSJ] = useState("")
+  const [generatedUSJ,setGeneratedUSJ] = useState(before)
 
   const [result, setResult] = useState("");
 
@@ -76,16 +78,20 @@ export default function AppLayout() {
     return result
   }
 
-  const cleanedUpManualUSJ = cleanupObj(after)
-
+  const cleanedUpAfter = cleanupObj(after)
+  
   useEffect(() => {
     // console.log(diffString(before,after))
     // console.log(diff(before,after))
+    setCleanedUpManualUSJ(cleanedUpAfter)
     setResult(bibleBook)
-  }, [toggle,bibleBook]) // Run this effect each time toggle or Bible book changes state
+  }, [toggle, bibleBook, cleanedUpAfter]) // Run this effect each time toggle or Bible book changes state
 
   const handleClick = () => setToggle(prev => !prev)
-  const handleBookChange = (bk) => setBibleBook(bk)
+  const handleBookChange = (bk) => {
+    console.log(bk)
+    setBibleBook(bk)
+  }
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -113,7 +119,7 @@ export default function AppLayout() {
         </>
       )}
         <JsonDiffComponent 
-          jsonA={before}
+          jsonA={generatedUSJ}
           jsonB={cleanedUpManualUSJ}
           styleCustomization={{
             additionLineStyle: { color: 'green' },
