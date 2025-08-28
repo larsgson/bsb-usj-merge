@@ -1,15 +1,10 @@
 /* eslint-disable no-unused-vars */
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect } from 'react'
 import Header from './Header'
-// import { after } from '../data/afterG'
-// import { before } from '../data/beforeG'
-import { after } from '../data/after'
-import { before } from '../data/before'
 import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 // import CircularProgress from '@mui/material/CircularProgress'
 import Typography from "@mui/material/Typography"
-import TextField from "@mui/material/TextField"
 import { JsonDiffComponent } from 'json-diff-react'
 
 export default function AppLayout() {
@@ -17,11 +12,13 @@ export default function AppLayout() {
   const [usjStr, setUsjStr] = useState()
   const [usjLoaded, setUsjLoaded] = useState(false)
   const [toggle, setToggle] = useState(false)
-  const [bibleBook, setBibleBook] = useState("GEN")
-  const [cleanedUpManualUSJ,setCleanedUpManualUSJ] = useState("")
-  const [generatedUSJ,setGeneratedUSJ] = useState(before)
+  const [bibleBook, setBibleBook] = useState("RUT")
+  const [value,setValue] = useState({label: "Ruth",value:"RUT"})
+  const [cleanedUpManualUSJ,setCleanedUpManualUSJ] = useState()
+  const [generatedUSJ,setGeneratedUSJ] = useState()
 
-  const [result, setResult] = useState("");
+  const [bBook, setBBook] = useState("")
+  const [validDiff, setValidDiff] = useState()
 
   const strip = (str) => str.trim()
   
@@ -78,14 +75,38 @@ export default function AppLayout() {
     return result
   }
 
-  const cleanedUpAfter = cleanupObj(after)
-  
+  // const cleanedUpAfter = cleanupObj(after)
+  const cleanedUpAfter = cleanupObj("")
+
+  const pad = (n) => ((n < 10) && (n >=0)) ? (`0${  n}`) : n
+
+
   useEffect(() => {
-    // console.log(diffString(before,after))
-    // console.log(diff(before,after))
-    setCleanedUpManualUSJ(cleanedUpAfter)
-    setResult(bibleBook)
-  }, [toggle, bibleBook, cleanedUpAfter]) // Run this effect each time toggle or Bible book changes state
+    const fetchManualEditedUSJFrom = async (idStr) => {
+      const response = await fetch(`manual-update/${idStr}.json`)
+      const data = await response.json()
+      return data
+    }
+    const fetchBSBFrom = async (idStr) => {
+      const response = await fetch(`BSB/${idStr}.usj`)
+      const data = await response.json()
+      return data
+    }
+    const fetchAll = async () => {
+      setValidDiff(false)
+      const jsonA = await fetchManualEditedUSJFrom(bibleBook) 
+      console.log(jsonA)
+      const jsonB = await fetchBSBFrom(bibleBook) 
+      console.log(jsonB)
+      // setCleanedUpManualUSJ(cleanedUpAfter)
+      setCleanedUpManualUSJ(cleanupObj(jsonA))
+      setGeneratedUSJ(jsonB)  
+      setValidDiff(true)
+      setBBook(bibleBook)
+      console.log(bibleBook)
+    }
+    fetchAll()
+  }, [toggle, bibleBook]) // Run this effect each time toggle or Bible book changes state
 
   const handleClick = () => setToggle(prev => !prev)
   const handleBookChange = (bk) => {
@@ -98,26 +119,11 @@ export default function AppLayout() {
       <Paper sx={{ position: 'fixed', top: 0, left: 0, right: 0 }} elevation={3}>
         <Header 
           title={"BSB USJ Merge"}
-          value={bibleBook}
           onBookChange={handleBookChange}
           onOpenClick={handleClick}
         />
       </Paper>
-      {usjLoaded && (
-        <>
-          <TextField
-            label="Readonly"
-            variant="outlined"
-            multiline
-            defaultValue={usjStr}
-            inputProps={{ readOnly: true }}
-            sx={{
-              width: "100%",
-              marginTop: 3,
-            }}
-          />
-        </>
-      )}
+      {validDiff && (
         <JsonDiffComponent 
           jsonA={generatedUSJ}
           jsonB={cleanedUpManualUSJ}
@@ -132,15 +138,16 @@ export default function AppLayout() {
             },
           }}
         />
+      )}
 
-        <Box 
-          sx={{ 
-            display: 'flex', 
-            justifyContent: 'center', 
-            paddingTop: '250px' 
-          }}>
+      <Box 
+        sx={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          paddingTop: '250px' 
+        }}>
         <Typography id="result" variant="h6" component="h2">
-        Diff result : {result}
+        Diff result : {bBook}
         </Typography>
       </Box>
     </Box>

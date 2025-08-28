@@ -3,20 +3,8 @@ import { useState } from 'react'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-import Fab from '@mui/material/Fab'
-import SourceIcon from '@mui/icons-material/Source'
 import TextField from '@mui/material/TextField'
 import Autocomplete from '@mui/material/Autocomplete'
-
-const sx = {
-  title: {
-    flexGrow: 1,
-    color: '#ffffff',
-  },
-  extendedIcon: {
-    marginRight: theme => theme.spacing(1),
-  },
-}
 
 const bibleBooks = [
   {label: "Genesis",value:"GEN"},
@@ -89,7 +77,7 @@ const bibleBooks = [
 ]
 
 const BibleBookSelect = ({onChange}) => {
-  const [bibleBook, setBibleBook] = useState(bibleBooks[0])
+  const [bibleBook, setBibleBook] = useState(bibleBooks[7])
   return (
     <Autocomplete
       options={bibleBooks}
@@ -108,7 +96,7 @@ const BibleBookSelect = ({onChange}) => {
 const Header = ({
   title,
   onBookChange,
-  onOpenClick,
+  value
 }) => {
   const handleBookChange = (bk) => {
     onBookChange && onBookChange(bk.value)
@@ -130,19 +118,9 @@ const Header = ({
           </Typography>
           <BibleBookSelect
             onChange={handleBookChange}
+            value={value}
           />
         </div>
-        <>
-          <Fab
-            color='primary'
-            aria-label='view'
-            variant='extended'
-            onClick={onOpenClick}
-          >
-            <SourceIcon sx={sx.extendedIcon} />
-            Check diff
-          </Fab>
-        </>
       </Toolbar>
     </AppBar>
   )
